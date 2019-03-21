@@ -10,14 +10,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>Thermo slides</title>
+<title>index slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -25,14 +25,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.css';
+        link.href = 'reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -13374,16 +13374,17 @@ $$ P V = N \frac{2}{3} &lt;\frac{1}{2} m v^2&gt; $$
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>3</strong>. It is about 480 m/s, 1700 km/h, 1070 mph</p>
-<p><em>Bonus question: Why does it take 5 to 10 minutes for a perfume to travel accross a room?</em></p>
+<h2 id="Quantitative-Example">Quantitative Example<a class="anchor-link" href="#Quantitative-Example">&#182;</a></h2><h4 id="How-fast-do-the-move?">How fast do the move?<a class="anchor-link" href="#How-fast-do-the-move?">&#182;</a></h4><p>The typical speed of an air molecule at room temperature (20°C) is</p>
+<p>It is about 480 m/s, 1700 km/h, 1070 mph</p>
+<p><em>Bonus question</em>: Why does it take 5 to 10 minutes for a perfume to travel accross a room?*</p>
 
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13486,7 +13487,7 @@ $$dW = -P dV$$<p>minus sign is important. If we compress it, work is done on the
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center> <h1><i>Adiabatic </i> Compression </h1> </center><ul>
+<center> <h1>Adiabatic Compression </h1> </center><ul>
 <li>no heat energy added or removed</li>
 <li>All the work done goest into changing the internal energy so $PdV = -dW = -dU$</li>
 <li>$U =PV/(\gamma-1)$, so $dU = (P dV + V dP)/(\gamma -1)$</li>
@@ -13500,7 +13501,7 @@ $$\gamma P dV = - V dP$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center> <h1><i>Adiabatic </i> Compression </h1> </center><p>We divide $\gamma P dV = - V dP$ by PV and we get beautiful differential equation:</p>
+<center> <h1>Adiabatic  Compression </h1> </center><p>We divide $\gamma P dV = - V dP$ by PV and we get beautiful differential equation:</p>
 $$(\gamma dV/V) + (dP/P) = 0$$<p><strong>Your turn</strong>: Assume $\gamma$ is constant and integrate and we get:</p>
 
 </div>
@@ -13677,8 +13678,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13693,9 +13694,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
+                { src: "reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
+                { src: "reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
